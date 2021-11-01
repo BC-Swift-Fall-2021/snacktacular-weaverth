@@ -240,11 +240,15 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title=" Photo" image="camera.fill" catalog="system"/>
                                     </button>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-vi-OfP">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="180"/>
+                                    </mapView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="FlK-JQ-Cde" firstAttribute="top" secondItem="erk-hz-ZXj" secondAttribute="top" constant="242" id="4Ir-pH-3z5"/>
                                     <constraint firstAttribute="trailing" secondItem="B8Y-QP-nck" secondAttribute="trailing" constant="8" id="8gi-at-ByN"/>
+                                    <constraint firstAttribute="trailing" secondItem="vwd-vi-OfP" secondAttribute="trailing" id="CbF-hh-41M"/>
                                     <constraint firstItem="B8Y-QP-nck" firstAttribute="leading" secondItem="erk-hz-ZXj" secondAttribute="leading" constant="8" id="Db4-qN-y0n"/>
                                     <constraint firstAttribute="trailing" secondItem="ZMm-Xt-MBU" secondAttribute="trailing" constant="8" id="Dkl-6l-Wp9"/>
                                     <constraint firstItem="ZMm-Xt-MBU" firstAttribute="leading" secondItem="FNf-bK-Gd6" secondAttribute="trailing" constant="8" id="JmM-2P-EuZ"/>
@@ -253,13 +257,16 @@
                                     <constraint firstAttribute="trailing" secondItem="FlK-JQ-Cde" secondAttribute="trailing" id="RUP-aF-4oa"/>
                                     <constraint firstItem="B8Y-QP-nck" firstAttribute="top" secondItem="Wuf-s1-1ly" secondAttribute="bottom" constant="2" id="SFI-Hq-BAY"/>
                                     <constraint firstItem="FlK-JQ-Cde" firstAttribute="leading" secondItem="erk-hz-ZXj" secondAttribute="leading" id="Uax-nt-9cf"/>
+                                    <constraint firstItem="vwd-vi-OfP" firstAttribute="top" secondItem="B8Y-QP-nck" secondAttribute="bottom" constant="2" id="V8T-IB-3Xw"/>
                                     <constraint firstAttribute="height" constant="380" id="WKj-Hv-X5R"/>
+                                    <constraint firstItem="FlK-JQ-Cde" firstAttribute="top" secondItem="vwd-vi-OfP" secondAttribute="bottom" id="b57-Y2-xFh"/>
                                     <constraint firstItem="Wuf-s1-1ly" firstAttribute="top" secondItem="erk-hz-ZXj" secondAttribute="top" constant="8" id="cGP-JO-uwz"/>
                                     <constraint firstItem="Mo0-hl-0qp" firstAttribute="top" secondItem="FlK-JQ-Cde" secondAttribute="bottom" constant="6" id="cIx-uE-3aw"/>
                                     <constraint firstItem="Mo0-hl-0qp" firstAttribute="leading" secondItem="CuX-h3-OFu" secondAttribute="trailing" id="cNa-Oa-M25"/>
                                     <constraint firstItem="FNf-bK-Gd6" firstAttribute="top" secondItem="FlK-JQ-Cde" secondAttribute="bottom" constant="4" id="fZP-IR-Lkh"/>
                                     <constraint firstItem="Wuf-s1-1ly" firstAttribute="leading" secondItem="erk-hz-ZXj" secondAttribute="leading" constant="8" id="fm8-pt-qAv"/>
                                     <constraint firstItem="CuX-h3-OFu" firstAttribute="top" secondItem="FlK-JQ-Cde" secondAttribute="bottom" constant="8" id="kDs-pg-uii"/>
+                                    <constraint firstItem="vwd-vi-OfP" firstAttribute="leading" secondItem="erk-hz-ZXj" secondAttribute="leading" id="kI3-hq-FwZ"/>
                                     <constraint firstItem="CuX-h3-OFu" firstAttribute="leading" secondItem="erk-hz-ZXj" secondAttribute="leading" constant="8" id="poe-l5-DKS"/>
                                 </constraints>
                             </view>
@@ -294,6 +301,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressTextField" destination="B8Y-QP-nck" id="giW-RI-8dD"/>
+                        <outlet property="mapView" destination="vwd-vi-OfP" id="8C4-tW-Rjs"/>
                         <outlet property="nameTextField" destination="Wuf-s1-1ly" id="k53-ri-dYk"/>
                         <outlet property="ratingLabel" destination="Mo0-hl-0qp" id="jUy-7T-sEr"/>
                     </connections>
