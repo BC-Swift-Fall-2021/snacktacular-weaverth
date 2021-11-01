@@ -14,6 +14,7 @@
 		639AC4A42730645B0012E108 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AC4A32730645B0012E108 /* Spot.swift */; };
 		639AC4A627306C460012E108 /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AC4A527306C460012E108 /* UIViewController+alert.swift */; };
 		639AC4A8273071860012E108 /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AC4A7273071860012E108 /* Spots.swift */; };
+		639AC4AA273076F20012E108 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639AC4A9273076F20012E108 /* APIKeys.swift */; };
 		63BC4BEC2728598C000013CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC4BEB2728598C000013CB /* AppDelegate.swift */; };
 		63BC4BEE2728598C000013CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC4BED2728598C000013CB /* SceneDelegate.swift */; };
 		63BC4BF02728598C000013CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC4BEF2728598C000013CB /* LoginViewController.swift */; };
@@ -31,6 +32,7 @@
 		639AC4A32730645B0012E108 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		639AC4A527306C460012E108 /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		639AC4A7273071860012E108 /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
+		639AC4A9273076F20012E108 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		63BC4BE82728598C000013CB /* Snacktacular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snacktacular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BC4BEB2728598C000013CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63BC4BED2728598C000013CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				632F84F42730362400485AD3 /* SpotTableViewCell.swift */,
 				632F84F827303AC000485AD3 /* SpotDetailViewController.swift */,
 				639AC4A527306C460012E108 /* UIViewController+alert.swift */,
+				639AC4A9273076F20012E108 /* APIKeys.swift */,
 				63BC4BF12728598C000013CB /* Main.storyboard */,
 				63BC4BF42728598D000013CB /* Assets.xcassets */,
 				63BC4BF62728598D000013CB /* LaunchScreen.storyboard */,
@@ -251,6 +254,7 @@
 				632F84F927303AC000485AD3 /* SpotDetailViewController.swift in Sources */,
 				639AC4A8273071860012E108 /* Spots.swift in Sources */,
 				632F84F52730362400485AD3 /* SpotTableViewCell.swift in Sources */,
+				639AC4AA273076F20012E108 /* APIKeys.swift in Sources */,
 				639AC4A42730645B0012E108 /* Spot.swift in Sources */,
 				63BC4BEE2728598C000013CB /* SceneDelegate.swift in Sources */,
 				639AC4A627306C460012E108 /* UIViewController+alert.swift in Sources */,

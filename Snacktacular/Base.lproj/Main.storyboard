@@ -273,7 +273,11 @@
                         </constraints>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Lookup Place" id="yg8-ts-bxS"/>
+                        <barButtonItem title="Lookup Place" id="yg8-ts-bxS">
+                            <connections>
+                                <action selector="locationButtonPressed:" destination="uiM-69-rfr" id="ywi-Zj-LxX"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="dDx-4G-mHb">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="7cC-gN-Ody">
@@ -366,7 +370,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Alu-tg-7fy"/>
+        <segue reference="aoD-es-DO1"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
