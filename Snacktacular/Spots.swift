@@ -24,8 +24,11 @@ class Spots {
             }
             self.spotArray = []
             for document in querySnapshot!.documents {
-                let spot = Spot(
+                let spot = Spot(dictionary: document.data())
+                spot.documentID = document.documentID
+                self.spotArray.append(spot)
             }
+            completed()
         }
     }
 }
