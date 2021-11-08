@@ -22,12 +22,15 @@ class SpotListViewController: UIViewController {
         configureSegmentedControl()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         spots.loadData {
+            self.sortBasedOnSegmentPressed()
             self.tableView.reloadData()
         }
+        
     }
+    
     
     func configureSegmentedControl(){
         // set colors for segmented control
@@ -46,6 +49,23 @@ class SpotListViewController: UIViewController {
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.spot = spots.spotArray[selectedIndexPath.row]
         }
+    }
+    
+    func sortBasedOnSegmentPressed(){
+        switch sortSegmentedControl.selectedSegmentIndex {
+        case 0: // A - Z
+            spots.spotArray.sort(by: {$0.name < $1.name})
+        case 1:
+            print("")
+        case 2:
+            print("")
+        default:
+            print("Hey! You shouldn't have gotten here.")
+        }
+        tableView.reloadData()
+    }
+    
+    @IBAction func sortSegmentPressed(_ sender: UISegmentedControl) {
     }
 }
 
